@@ -19,6 +19,8 @@ company_name = input("Please enter your company's name: ")
 # Get the cable length from the user
 cable_length_string = input("Enter how much fiber optical you need in feet: ")
 cable_length = None
+
+# Check if the user entered valid number otherwise notify an error
 try:
     # Convert the string length provided by the user to a floating number
     cable_length = float(cable_length_string)
