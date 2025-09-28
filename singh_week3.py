@@ -23,15 +23,25 @@ CABLE_COST_ABOVE_500_FEET = 0.55
 print("Welcome. Let's calculate fiber optic cable installation cost.")
 
 # Get company name from the user
-company_name = input("Please enter your company's name: ")
+company_name_from_user = input("Please enter your company name: ")
+
+# Initialize variable to check if user actually entered something
+company_name = None
+
+# Referred below link for the retry logic inspiration
+# https://stackoverflow.com/a/34789951
+while (company_name is None) or (company_name == ""):
+    company_name = company_name_from_user
+    if company_name.strip() == "":
+        company_name_from_user = input("Please enter a valid name: ")
 
 # Get the cable length from the user
 cable_length_string = input("Enter how much cable you need in feet: ")
-cable_length = None
+cable_length = 0
 
 # Check if user entered a valid number otherwise show an error message
 try:
-    # Convert the string length provided by the user to floating number
+    # Convert the string length provided by the user to a number
     cable_length = float(cable_length_string)
 except ValueError:
     print(f"Error: please enter a numeric value for the cable length.")
