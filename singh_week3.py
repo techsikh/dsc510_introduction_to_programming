@@ -30,7 +30,7 @@ company_name = None
 
 # Referred below link for the retry logic inspiration
 # https://stackoverflow.com/a/34789951
-while (company_name is None) or (company_name == ""):
+while (company_name is None) or (company_name.strip() == ""):
     company_name = company_name_from_user
     if company_name.strip() == "":
         company_name_from_user = input("Please enter a valid name: ")
