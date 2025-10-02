@@ -1,0 +1,85 @@
+The purpose of this assignment is to demonstrate that you can create a basic program which utilizes a proper format, comments, accepts user input from the console,
+and generates a usable response to the user. You should assume that the user is not a developer and does not have access to your code.
+
+Using comments, create a header at the top of the program indicating the purpose of the program, assignment number, and your name. Refer to the Submission
+Instructions for an example of an acceptable header.
+Use a print statement to print a welcome message for your user.
+Retrieve the company name from the user using input().
+Retrieve the number of feet of fiber optic cable to be installed from the user using input().
+Calculate the installation cost of fiber optic cable by multiplying the number of feet requested by the user by $.95 per foot.
+Print a receipt for the user including the company name, number of feet of fiber to be installed, and total cost in a legible format.
+Consider a receipt that you may receive when making a purchase.
+Include appropriate comments throughout the program.
+Your program should adhere to PEP8 guidelines including meaningful variable names.
+Save your program with a meaningful filename such as lastname_week1.py.
+Must use good coding practices.
+
+
+Programming Assignment Submission Instructions
+Every one of your programs should contain a header that provides some basic information
+about what the program does. For this class here is the minimum of what I’d expect to see. As
+you take your skills into the workforce many firms require header templates that you must use.
+This is imperative for consistency. Many firms will also require that your document changes via
+comments as well. I’ve provided an example of that below as well. This serves as a mechanism
+to easily track changes, so you can see what has changed and who made the change.
+Basic Program header:
+• #DSC 510
+• #Week 2
+• #Programming Assignment Week 2
+• #Author Catie Williams
+• #8/4/2024
+Change Control Log:
+• #Change#:1
+• #Change(s) Made: Added error handling to check for invalid
+input lines 34-38 added
+• #Date of Change: 8/10/2024
+• #Author: Dave Lingerfelt
+• #Change Approved by: Catie Williams
+• #Date Moved to Production: 8/10/2024
+
+WEEK 3:
+
+The purpose of the program this week is to demonstrate that you can implement “if statements” and try blocks in a program.
+This program will build on what you accomplished in Week 2. Your program will calculate the cost of fiber optic cable installation by multiplying
+the number of feet needed by the price per foot. The price per foot will be dependent on how many feet requested by the user.
+Using if statements, you will evaluate a bulk discount. You will prompt the user for the number of fiber optic cable
+they need installed. Using the default value of $.95 per foot calculate the total expense for any number of
+feet up to and including 100 feet. If the user purchases more than 100 feet they are charged $0.85 per foot.
+If the user purchases more than 250 feet they will be charged $0.75 per foot. If they purchase more than 500 feet, they will be charged $0.55 per foot.
+
+
+
+Your program must have a header.
+Your program must adhere to PEP8 guidelines especially as it pertains to variable names.
+Display a welcome message for your program.
+Retrieve the company name from the user.
+Retrieve the number of feet of fiber optic cable to be installed from the user.
+Evaluate the total cost based upon the number of feet requested, keeping in mind that the cost per foot will depend on the number of feet requested.
+Print a receipt for the user including the company name, number of feet of fiber to be installed, and total cost in a legible format.
+Your program must use try blocks to catch any ValueError exceptions as you convert user input to a numeric value.
+Must use good coding practices.
+
+
+WEEK 4:
+
+The purpose of this week’s assignment is to demonstrate that you can successfully create a main method and an additional
+function to perform the cost calculation. We will continue to modify our program from Week 2 and Week 3 by adding a new
+function to perform the calculation and by adding a main method which will serve as the entry point to the program’s execution.
+
+
+
+Modify your If Statement program from Week 3 to include a main function which will encompass
+the majority of the logic for this program. All code should be within a function.
+Modify your IF Statement program to add a cost calculation function. This function will perform the
+cost calculation only. The function will have two parameters (feet and price per foot). When you call the function,
+you will pass two arguments to the function: feet of fiber to be installed and the cost. Remember that price is
+dependent on the number of feet being installed.
+Your program must have the following elements:
+A header
+A welcome message
+A main method
+A cost calculation function with two parameters and a proper call to this function from within main
+The application must calculate the cost based upon the number of feet being requested by calling the cost calculation function
+A receipt displaying the company name and the total calculated cost
+Must use good coding practices
+Must follow the function best practices
