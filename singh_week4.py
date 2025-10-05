@@ -12,8 +12,8 @@ Change(s) Made: Selecting cost of cable bases on the ordered length.
 Date of Change: 25 September 2025
 Author: Jujahar Singh
 Change#: 2
-Change(s) Made: Grouping logic within functions and controlling the execution
-                from main method
+Change(s) Made: Grouping logic within functions and controlling the
+                execution from main method
 Date of Change: 02 October 2025
 Author: Jujahar Singh
 ===========================================
@@ -51,12 +51,12 @@ def get_cable_length():
 
 
 def calculate_cost(cable_feet, price_per_foot):
-    """Calculates the total installation cost of cable based on the length"""
+    """Calculates the installation cost of cable based on the length"""
     return cable_feet * price_per_foot
 
 
 def print_receipt(company_name, cable_length, installation_cost):
-    """Prints the receipt for the given cable length and installation cost"""
+    """Prints the installation receipt with other order details"""
     print("------------------------------")
     print("Installation Receipt")
     print("------------------------------")
