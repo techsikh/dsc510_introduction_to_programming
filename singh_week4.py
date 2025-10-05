@@ -34,6 +34,7 @@ def get_company_name():
             company_name_from_user = input("Please enter a valid name: ")
     return company_name
 
+
 def get_cable_length():
     """asks user for cable length and returns it"""
     # Get the cable length from the user
@@ -48,10 +49,10 @@ def get_cable_length():
         print(f"Error: please enter a numeric value for the cable length.")
     return cable_length
 
-def get_installation_cost(cable_feet, price_per_foot):
+
+def calculate_cost(cable_feet, price_per_foot):
     """Calculates the total installation cost of cable based on the length"""
-    installation_cost = cable_feet * price_per_foot
-    return installation_cost
+    return cable_feet * price_per_foot
 
 
 def print_receipt(company_name, cable_length, installation_cost):
@@ -83,13 +84,13 @@ def main():
     # which is based on the length of the cable ordered, with the total
     # cable length
     if cable_length > 500:
-        installation_cost = get_installation_cost(cable_length, 0.55)
+        installation_cost = calculate_cost(cable_length, 0.55)
     elif cable_length > 250:
-        installation_cost = get_installation_cost(cable_length, 0.75)
+        installation_cost = calculate_cost(cable_length, 0.75)
     elif cable_length > 100:
-        installation_cost = get_installation_cost(cable_length, 0.85)
+        installation_cost = calculate_cost(cable_length, 0.85)
     else:
-        installation_cost = get_installation_cost(cable_length, 0.95)
+        installation_cost = calculate_cost(cable_length, 0.95)
     print_receipt(company_name, cable_length, installation_cost)
 
 
