@@ -85,6 +85,7 @@ def calculate_average():
 
     # ask user for input until number_count number of times
     # also add each provided number to the total sum
+    # Referred https://www.w3schools.com/python/ref_func_range.asp
     for counter in range(number_count):
         numeric_input = get_numeric_input(counter + 1)
         numbers_list.append(numeric_input)
