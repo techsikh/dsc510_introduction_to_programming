@@ -111,19 +111,18 @@ def main():
         if user_selection == "average":
             average = calculate_average()
             print(f"The average of the entered numbers is {average:.2f}")
-            print("==============================")
         elif user_selection == "calculation":
             message = ("Enter '+' for addition, '-' for subtraction, "
                        "'*' for multiplication or '/' for division: ")
             operator = get_specific_input(["+", "-", "*", "/"], message)
             result = perform_calculation(operator)
             print(f"Result of the {operator} operation is {result:.2f}")
-            print("==============================")
         elif user_selection == "-1":
             print("Thank you")
             break
         else:
             print("Error: please enter a valid option.")
+        print("==============================")
 
 
 if __name__ == "__main__":
